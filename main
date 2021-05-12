@@ -12,11 +12,11 @@ def splitNumber(string):
     def reverse_slicing(s):
         return s[::-1]
 
-    a_string = reverse_slicing(string)
+    price_string = reverse_slicing(string)
     split_strings = []
-    for index in range(0, len(a_string), 3):
-        split_strings.append(a_string[index: index + 3])
-    x = "/".join(split_strings)
+    for index in range(0, len(price_string), 3):
+        split_strings.append(price_string[index: index + 3])
+    x = ".".join(split_strings)
     return reverse_slicing(x)
 
 
